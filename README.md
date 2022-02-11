@@ -9,7 +9,7 @@ We recommend using scons-2.5.1 to avoid errors regarding python syntax errors.
 build-essential git m4 scons zlib1g zlib1g-dev libprotobuf-dev protobuf-compiler libprotoc-dev libgoogle-perftools-dev python-dev python
 ```
 
-## Clone Git Repositories
+## Git Repositories Clone
 Clone the AOS-gem5 repository.
 ```
 git clone https://github.com/yonghaekim/AOS-gem5.git .
