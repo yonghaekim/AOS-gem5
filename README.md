@@ -26,8 +26,8 @@ To enable AOS features, you will need programs instrumented using AOS compiler p
 Please check out our [AOS-llvm](https://github.com/yonghaekim/AOS-llvm) repository for more details.
 
 ```
-./run_spec_from_scratch.sh bzip2 # when running baseline programs
-./run_spec_from_scratch.sh bzip2 AOS # when running instrumented AOS programs
+./run_spec_from_scratch.sh bzip2      # when running baseline programs
+./run_spec_from_scratch.sh bzip2 AOS  # when running instrumented AOS programs
 ```
 
 ## Publications
