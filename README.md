@@ -22,8 +22,8 @@ scons ./build/ARM_MESI_Two_Level/gem5.opt -j8
 We put an example script, `run_spec_from_scratch.sh`, under `$GEM5_PATH/exp_script`.
 
 ```
-run_spec_from_scratch.sh bzip2 # when running baseline programs
-run_spec_from_scratch.sh bzip2 AOS # when running instrumented AOS programs
+./run_spec_from_scratch.sh bzip2 # when running baseline programs
+./run_spec_from_scratch.sh bzip2 AOS # when running instrumented AOS programs
 ```
 
 ## Publications
