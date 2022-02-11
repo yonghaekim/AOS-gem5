@@ -13,7 +13,7 @@ Clone the AOS-gem5 repository.
 git clone https://github.com/yonghaekim/AOS-gem5.git .
 ```
 
-## Build Instructions
+## Build Instruction
 ```
 scons ./build/ARM_MESI_Two_Level/gem5.opt -j8
 ```
