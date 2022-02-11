@@ -302,6 +302,18 @@ MCQUnit<Impl>::commitInsts(InstSeqNum &youngest_inst)
     }
 }
 
+// According to the [1]-[2],
+// "Several memory and string routines, such as memcpy, strlen(), and strcmp(),
+// needed to be adjusted to prevent benign OOB violations.
+// Such functions are typically optimized to process strings in blocks
+// using SIMD instructions, resulting in fetching data beyond the allocated region."
+// [1] Cryptographic Capability Computing, MICRO'21
+// [2] https://android.googlesource.com/platform/bionic/+/900d07d6a1f3e1eca8cdbb3b1db1ceeec0acc9e2
+// To avoid this issue without modifying the libraries (for simplicity),
+// we perform bounds checking for neon insts by rounding up/down their corresponding bounds
+// or for regular loads/stores without adding the effective size to the base address.
+// This is not the limitation of AOS hardware
+// and should be able to be resolved when using modified libraries.
 template<class Impl>
 void
 MCQUnit<Impl>::completeDataAccess(PacketPtr pkt)
