@@ -20,9 +20,7 @@ scons ./build/ARM_MESI_Two_Level/gem5.opt -j8
 
 ## How to run SPEC2006 workloads?
 We put an example script, `run_spec_from_scratch.sh`, under `$GEM5_PATH/exp_script`.
-
 To enable AOS features, you will need programs instrumented using AOS compiler passes.
-
 Please check our [AOS-llvm](https://github.com/yonghaekim/AOS-llvm) repository for more details.
 
 ```
