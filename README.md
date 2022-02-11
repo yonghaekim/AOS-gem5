@@ -1,4 +1,4 @@
-# AOS LLVM
+# AOS gem5
 
 ## Dependencies
 According to the [gem5 documentation](https://www.gem5.org/documentation/learning_gem5/part1/building/),
