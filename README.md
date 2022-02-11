@@ -23,7 +23,7 @@ We put an example script, `run_spec_from_scratch.sh`, under `$GEM5_PATH/exp_scri
 
 To enable AOS features, you will need programs instrumented using AOS compiler passes.
 
-Please check our [AOS-llvm](https://github.com/yonghaekim/AOS-llvm) repository for more details.
+Please check out our [AOS-llvm](https://github.com/yonghaekim/AOS-llvm) repository for more details.
 
 ```
 ./run_spec_from_scratch.sh bzip2 # when running baseline programs
