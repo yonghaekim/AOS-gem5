@@ -3,6 +3,10 @@
 ## Dependencies
 According to the [gem5 documentation](https://www.gem5.org/documentation/learning_gem5/part1/building/),
 you will likely need the following packages.
+
+In our environment, the version of scons often makes a trouble.
+
+We recommend using scons-2.5.1 to avoid errors regarding python syntax errors.
 ```
 build-essential git m4 scons zlib1g zlib1g-dev libprotobuf-dev protobuf-compiler libprotoc-dev libgoogle-perftools-dev python-dev python
 ```
